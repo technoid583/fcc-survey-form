@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 02 — Survey form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="survey-form">
+            <div class="survey-form__container">
+                <header class="survey-form__header header-form">
+                    <a class="header-form__logo" href="#">
+                        <img src="https://i.postimg.cc/kMQhYPMs/logo.png" alt="logo">
+                    </a>
+                    <h1 class="header-form__title title" id="title">Survey Form</h1>
+                    <p class="sr-only" id="description">Survey Form for Microsoft</p>
+                </header>
+                <main class="survey-form__main main-form">
+                    <form class="main-form__form form" id="survey-form">
+                        <div class="form__item">
+                            <label class="sr-only" for="name" id="name-label">Enter your name</label>
+                            <input class="form__input" type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="name" id="email-label">Enter your email</label>
+                            <input class="form__input" type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="name" id="number-label">Enter your age</label>
+                            <input class="form__input" type="number" name="age" id="number" placeholder="Enter your age" min="10" max="99">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__title" for="dropdown">Which option best describes your current role?</label>
+                            <select class="form__dropdown" name="role" id="dropdown">
+                                <option value="" disabled selected>Select current role</option>
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="learner">Full Time Learner</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <fieldset class="form__group" role="radiogroup">
+                                <legend class="form__title">Would you recommend Microsoft to a friend?</legend>
+                                <label class="form__label">
+                                    <input class="form__radio" type="radio" name="recommend" value="definetly" id="" checked>
+                                    Definetly
+                                </label>
+                                <label class="form__label">
+                                    <input class="form__radio" type="radio" name="recommend" value="maybe" id="">
+                                    Maybe
+                                </label>
+                                <label class="form__label">
+                                    <input class="form__radio" type="radio" name="recommend" value="not-sure" id="">
+                                    Not sure
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="form__item">
+                            <fieldset class="form__group" role="checkboxgroup">
+                                <legend class="form__title">Would you recommend Microsoft to a friend?</legend>
+                                <label class="form__label">
+                                    <input class="form__checkbox" type="checkbox" name="imrove" value="microsoft-365" id="">
+                                    Microsoft 365
+                                </label>
+                                <label class="form__label">
+                                    <input class="form__checkbox" type="checkbox" name="imrove" value="office" id="">
+                                    Office
+                                </label>
+                                <label class="form__label">
+                                    <input class="form__checkbox" type="checkbox" name="imrove" value="windows" id="">
+                                    Windows
+                                </label>
+                                <label class="form__label">
+                                    <input class="form__checkbox" type="checkbox" name="imrove" value="surface" id="">
+                                    Surface
+                                </label>
+                                <label class="form__label">
+                                    <input class="form__checkbox" type="checkbox" name="imrove" value="xbox" id="">
+                                    Xbox
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__title" for="comment">Any comments or suggestions?</label>
+                            <textarea class="form__comment" name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button class="form-submit__button" type="submit" id="submit">Submit</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
